@@ -1,0 +1,21 @@
+{
+  "name": "raghvendra",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raghvendrarex/Raghvendra.git"
+  },
+  "author": "Raghvendra Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raghvendrarex/Raghvendra/issues"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
