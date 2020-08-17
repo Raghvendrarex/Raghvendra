@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut();
   }
 
@@ -35,7 +35,7 @@
 //menu overlay
 
 .menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   opacity: 0.9;
@@ -104,6 +104,7 @@
   .nav-link {
     display: inline-block;
     position: relative;
+    color: set-text-color($primary-color);
     text-transform: uppercase;
     font-size: 30px;
     padding: 1rem 0;

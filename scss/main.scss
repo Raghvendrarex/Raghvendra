@@ -9,7 +9,7 @@
 body {
   @include background();
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -30,7 +30,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
@@ -46,6 +46,7 @@ header {
 
 #firstname {
   position: flex;
+  stroke: set-text-color($primary-color);
   flex: 1;
   justify-content: center;
   top: 50%;
@@ -114,41 +115,41 @@ header {
     fill: transparent;
   }
   to {
-    fill: #ffff;
+    fill: set-text-color($primary-color);
   }
 }
 
-#logo {
+#secondname {
   position: flex;
   flex: auto;
-  justify-content: center;
+
   top: 50%;
   left: 58.5%;
 
   animation: fill2 0.5s ease forwards 3.5s;
 }
 
-#logo path:nth-child(1) {
+#secondname path:nth-child(1) {
   stroke-dasharray: 372.3431091308594;
   stroke-dashoffset: 372.3431091308594;
   animation: line-anim 2s ease forwards;
 }
-#logo path:nth-child(2) {
+#secondname path:nth-child(2) {
   stroke-dasharray: 160.50003051757812;
   stroke-dashoffset: 160.50003051757812;
   animation: line-anim 2s ease forwards 0.3s;
 }
-#logo path:nth-child(3) {
+#secondname path:nth-child(3) {
   stroke-dasharray: 276.02740478515625;
   stroke-dashoffset: 276.02740478515625;
   animation: line-anim 2s ease forwards 0.6s;
 }
-#logo path:nth-child(4) {
+#secondname path:nth-child(4) {
   stroke-dasharray: 390.6463623046875;
   stroke-dashoffset: 390.6463623046875;
   animation: line-anim 2s ease forwards 0.9s;
 }
-#logo path:nth-child(5) {
+#secondname path:nth-child(5) {
   stroke-dasharray: 317.1824035644531;
   stroke-dashoffset: 317.1824035644531;
   animation: line-anim 2s ease forwards 1.2s;
