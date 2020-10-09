@@ -99,7 +99,7 @@
       margin-bottom: 1rem; }
   #firstname {
     width: 400px; }
-  #secondname {
+  #lastname {
     width: 175px; }
   ul.menu-nav,
   div.menu-branding {
@@ -166,11 +166,16 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-top: 10px;
-    display: block; }
+    font-size: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); }
 
 a {
   color: #fff;
@@ -184,14 +189,24 @@ header {
 .text-secondary {
   color: #4da3d1; }
 
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #4da3d1;
+        transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 10rem; }
+
 #firstname {
-  position: flex;
-  flex-wrap: wrap;
-  stroke: #fff;
-  flex: 1;
-  justify-content: center;
-  top: 50%;
-  animation: fill1 0.5s ease forwards 3.5s; }
+  stroke: white;
+  animation: fill2 0.5s ease forwards 3.5s; }
 
 #firstname path:nth-child(1) {
   stroke-dasharray: 386.82928466796875;
@@ -243,68 +258,50 @@ header {
   stroke-dashoffset: 321.28826904296875;
   animation: line-anim 2s ease forwards 2.7s; }
 
+#lastname {
+  stroke: #4da3d1;
+  animation: fill1 0.5s ease forwards 3.5s; }
+
+#lastname path:nth-child(1) {
+  stroke-dasharray: 372.3431091308594;
+  stroke-dashoffset: 372.3431091308594;
+  animation: line-anim 2s ease forwards; }
+
+#lastname path:nth-child(2) {
+  stroke-dasharray: 160.50003051757812;
+  stroke-dashoffset: 160.50003051757812;
+  animation: line-anim 2s ease forwards 0.3s; }
+
+#lastname path:nth-child(3) {
+  stroke-dasharray: 276.02740478515625;
+  stroke-dashoffset: 276.02740478515625;
+  animation: line-anim 2s ease forwards 0.6s; }
+
+#lastname path:nth-child(4) {
+  stroke-dasharray: 390.6463623046875;
+  stroke-dashoffset: 390.6463623046875;
+  animation: line-anim 2s ease forwards 0.9s; }
+
+#lastname path:nth-child(5) {
+  stroke-dasharray: 317.1824035644531;
+  stroke-dashoffset: 317.1824035644531;
+  animation: line-anim 2s ease forwards 1.2s; }
+
 @keyframes line-anim {
   to {
-    stroke: dashoffset 0; } }
+    stroke-dashoffset: 0; } }
 
 @keyframes fill1 {
   from {
     fill: transparent; }
   to {
-    fill: #fff; } }
-
-#secondname {
-  flex: auto;
-  position: flex;
-  top: 50%;
-  left: 58.5%;
-  animation: fill2 0.5s ease forwards 3.5s; }
-
-#secondname path:nth-child(1) {
-  stroke-dasharray: 372.3431091308594;
-  stroke-dashoffset: 372.3431091308594;
-  animation: line-anim 2s ease forwards; }
-
-#secondname path:nth-child(2) {
-  stroke-dasharray: 160.50003051757812;
-  stroke-dashoffset: 160.50003051757812;
-  animation: line-anim 2s ease forwards 0.3s; }
-
-#secondname path:nth-child(3) {
-  stroke-dasharray: 276.02740478515625;
-  stroke-dashoffset: 276.02740478515625;
-  animation: line-anim 2s ease forwards 0.6s; }
-
-#secondname path:nth-child(4) {
-  stroke-dasharray: 390.6463623046875;
-  stroke-dashoffset: 390.6463623046875;
-  animation: line-anim 2s ease forwards 0.9s; }
-
-#secondname path:nth-child(5) {
-  stroke-dasharray: 317.1824035644531;
-  stroke-dashoffset: 317.1824035644531;
-  animation: line-anim 2s ease forwards 1.2s; }
+    fill: #4da3d1; } }
 
 @keyframes fill2 {
   from {
     fill: transparent; }
   to {
-    fill: #4da3d1; } }
-
-main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #4da3d1;
-        transition: all 0.5s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
+    fill: white; } }
 
 .resume {
   margin-top: 30px; }
